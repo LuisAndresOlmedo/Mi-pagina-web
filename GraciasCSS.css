@@ -1,0 +1,36 @@
+.sectionOne
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.section-img
+{
+    display: flex;
+    height: 200px;
+    border: 1px solid green;
+    border-radius: 100px;
+}
+.section-figure
+{
+    display: flex;
+}
+.section-text
+{
+    display: flex;
+    text-align: center;    
+    color: green;
+}
+.Actualización
+{
+    color: green;
+    text-align: center;
+}
+.deco
+{
+    color: green;
+    border: green 1px solid;
+    border-radius: 5px;
+}

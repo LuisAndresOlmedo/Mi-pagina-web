@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Este es el HTML de mí página web, Si estas leyendo este es porque estas interesado o te causa curiosidad y debo admitirlo, ami también me causa pero ver tu impresión -->
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Precentación</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img src="images/logo.png" height="50px" alt="Logo de http://leonidasesteban.com" />
+        </figure>
+        <nav class="menu">
+          <ol>
+            <li>
+              <a class="link" href="#portafolio">Desarrollo</a>
+            </li>
+            <li>
+              <a class="link" href="#eventos">Certificaciones</a>
+            </li>
+            <li>
+              <a class="link" href="#contacto">Contacto</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+    <div class="container">
+    <img class="hero-image" src="./images/hero.jpg" width="250" height="200" alt="imagen principal del sitio">
+    <h1>
+      Hola! Soy <strong>Luis Andres Olmedo</strong><br/> Desarrollador <strong>Frontend</strong> con <br> pasión por el <strong>Aprendizaje</strong>
+    </h1>
+    </div>
+    </section>
+    <section id="portafolio" class="portfolio">
+      <div class="container">
+          <h2 class="project-h2">Edicación y Desarrollo</h2>
+        <article class="project">
+          <div class="project-details">
+            <h3 class="project-title">Educación en Platzi</h3>
+          <h6 class="project-course">Desarrollador Frontend</h6>
+          <p class="project-date"><small><strong>Fecha:</strong> 31/01/2020</small></p>
+          <p class="project-url"><small><strong>Puedes verlo:</strong> https://platzi.com/@LuisAndres07</small></p>
+          <p class="project-description">Platzi fue el resultado de 6 meses de aprendizaje que me enseño el funcionamiento de HTML5, CSS3, JavaScript, React y React Native. <br>
+            En cada curso de esta plataforma lográbamos hacer un proyecto que en un futuro colocare en esta Web Personal, Pero que sirvieron como inspiración para empezar a crear grandes cosas y no quedarme de brazos cruzados.</p>
+          </div>
+          <figure class="project-imageContainer">
+            <img class="project-image" width="500" src="images/General.png" alt="proyecto del curso de React Native">
+          </figure>
+        </article>
+        <article class="project">
+          <figure class="project-imageContainer">
+            <img class="project-image-2" width="500" src="images/Video.png" alt="proyecto del curso de React Native">
+          </figure>
+          <div class="project-details-2">
+            <h3 class="project-title">Video De Precentación</h3>
+            <p class="project-description">En este video desarrollare mi vida, mis proyectos y planes para mi futuro en un conjunto de desempeños y destrezas que fui adquiriendo a medida que fui evolucionando en mis areas laborales como profesionales para que ustedes tengan una mejor y resumida manera de conocerme.</p>
+            <h6 class="project-course">Está en producción y se agregara a la próxima actualización.</h6>
+          </div>
+        </article>
+      </div>
+    </section>
+      <div class="container">
+      <h2 class="event-list-title">Certificaciones</h2>
+      </div>    
+    <section id="eventos" class="event-list">
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/HTML5CSS3.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Desarrollo Web Online</h3>
+            <p class="event-description">Incremente mis conocimientos en HTML5 y CSS3. Para crear sitios webs, personalízarlos e iniciar mi carrera para ser un Frontend profesional.</p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/GTI.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Git y GitHub</h3>
+            <p class="event-description">Mis proyectos usan su propio sistema de control de versiones. Gracias a Git aprendi lo basico de lineas de comandos y gestionar mis proyectos alojándolos en Github.</p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/PrograBasic.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Programación Básica</h3>
+            <p class="event-description">Me enseño a programar desde cero, domina Javascript, entender HTML y aprender de algoritmos. Sí, desde cero. Entender la lógica del código, cómo piensan los programadores y cómo programar juegos, proyectos y hasta robots. Aprender a programar no es fácil.</p>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="images/Aprender.png" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Aprender en Linea Efectivamente</h3>
+            <p class="event-description">Todos los cerebros funcionan diferente. En este curso aprendí a identificar mis fortalezas cognitivas para mejorar mi rendimiento académico. Descubrí mi estilo de aprendizaje y puse en práctica técnicas para estimular mi inteligencia, atención y memoria.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container">
+        <form class="contact-email" action="Gracias.html">
+          <h3 class="contact-title">¿Creamos algo juntos?</h3>
+          <input type="text" placeholder="Déjame tu email" id="email">
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="social">
+          <a href="https://twitter.com/LuisAndres1407" class="social-link twitter" target="_blank"></a>
+          <a href="https://www.facebook.com/LuisAndresyo" class="social-link facebook" target="_blank"></a>
+          <a href="https://github.com/LuisAndresOlmedo" class="social-link github" target="_blank"></a>
+          <a href="https://www.instagram.com/luisandres_nk" class="social-link instagram" target="_blank"></a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div>
+          <p>Luis en participación de <img src="images/platzi.png" width="80px" alt="platzi" ></p>
+        </div>
+        <div>
+          <p>Designed with 💚 by <a href="https://twitter.com/LuisAndres1407">@LuisAndres1407</a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<!-- Esto es el HTML -->
