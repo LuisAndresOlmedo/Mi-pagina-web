@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<!-- Este es el HTML de mí página web, Si estas leyendo este es porque estas interesado o te causa curiosidad y debo admitirlo, ami también me causa pero ver tu impresión -->
+<!-- Este es el HTML de mí página web, Si estas leyendo este es porque estas interesado o te causa curiosidad saber cuales son mis habilidades, debo admitirlo ami también me da, Igualmente Gracias por pasarte 💚-->
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precentación</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -14,6 +15,7 @@
         <figure class="logo">
           <img src="images/logo.png" height="50px" alt="Logo de http://leonidasesteban.com" />
         </figure>
+        <i class="icon-Menu burger-button" id="burger-menu"></i>
         <nav class="menu">
           <ol>
             <li>
@@ -39,28 +41,28 @@
     </section>
     <section id="portafolio" class="portfolio">
       <div class="container">
-          <h2 class="project-h2">Edicación y Desarrollo</h2>
+        <h2 class="project-h2">Educación y Desarrollo</h2>
         <article class="project">
           <div class="project-details">
             <h3 class="project-title">Educación en Platzi</h3>
           <h6 class="project-course">Desarrollador Frontend</h6>
           <p class="project-date"><small><strong>Fecha:</strong> 31/01/2020</small></p>
           <p class="project-url"><small><strong>Puedes verlo:</strong> https://platzi.com/@LuisAndres07</small></p>
-          <p class="project-description">Platzi fue el resultado de 6 meses de aprendizaje que me enseño el funcionamiento de HTML5, CSS3, JavaScript, React y React Native. <br>
-            En cada curso de esta plataforma lográbamos hacer un proyecto que en un futuro colocare en esta Web Personal, Pero que sirvieron como inspiración para empezar a crear grandes cosas y no quedarme de brazos cruzados.</p>
+          <p class="project-description">Platzi fue el resultado de 6 meses de aprendizaje que me enseño de HTML5, CSS3, JavaScript, React y React Native. <br>
+            En cada curso de esta plataforma logre hacer un proyecto que los colocare aca en un futuro, Pero que sirvieron como inspiración para empezar a crear grandes cosas.</p>
           </div>
           <figure class="project-imageContainer">
-            <img class="project-image" width="500" src="images/General.png" alt="proyecto del curso de React Native">
+            <img class="project-image" width="500" src="images/General.png" alt="Imagen de procesos educativos">
           </figure>
         </article>
         <article class="project">
           <figure class="project-imageContainer">
-            <img class="project-image-2" width="500" src="images/Video.png" alt="proyecto del curso de React Native">
+            <img class="project-image-2" width="500" src="images/Video.png" alt="Imagen de Video">
           </figure>
           <div class="project-details-2">
-            <h3 class="project-title">Video De Precentación</h3>
-            <p class="project-description">En este video desarrollare mi vida, mis proyectos y planes para mi futuro en un conjunto de desempeños y destrezas que fui adquiriendo a medida que fui evolucionando en mis areas laborales como profesionales para que ustedes tengan una mejor y resumida manera de conocerme.</p>
-            <h6 class="project-course">Está en producción y se agregara a la próxima actualización.</h6>
+            <h3 class="project-title-2">Video De Presentación</h3>
+            <p class="project-description-2">En este video desarrollare mis planes y proyectos, exponer desempeños y destrezas que e adquiriendo a medida que fui evolucionando en areas laborales y como profesional para que ustedes tengan una mejor y resumida manera de conocerme.</p>
+            <h6 class="project-course-2">Está en producción y se agregara a la próxima actualización.</h6>
           </div>
         </article>
       </div>
@@ -76,7 +78,7 @@
           </figure>
           <div class="event-detail">
             <h3 class="event-title">Desarrollo Web Online</h3>
-            <p class="event-description">Incremente mis conocimientos en HTML5 y CSS3. Para crear sitios webs, personalízarlos e iniciar mi carrera para ser un Frontend profesional.</p>
+            <p class="event-description">Aumenté mis conocimientos en HTML5 y CSS3. Para crear sitios webs, personalízarlos e iniciar mi carrera para ser un Desarrollador Frontend Profesional.</p>
           </div>
         </article>
         <article class="event">
@@ -110,10 +112,10 @@
     </section>
     <section id="contacto" class="contact">
       <div class="container">
-        <form class="contact-email" action="Gracias.html">
+        <form class="contact-email">
           <h3 class="contact-title">¿Creamos algo juntos?</h3>
           <input type="text" placeholder="Déjame tu email" id="email">
-          <button type="submit">Enviar</button>
+          <button id="boton" type="button">Enviar</button>
         </form>
         <div class="social">
           <a href="https://twitter.com/LuisAndres1407" class="social-link twitter" target="_blank"></a>
@@ -133,6 +135,29 @@
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>var button = document.getElementById("boton"); button.addEventListener("click", () => swal("Gracias por enviarme tu correo", "Mi es WhatsApp +5493425262580", "success"));</script>
+    <script>
+      const menu = document.querySelector(".menu")
+      const burgerButton = document.querySelector("#burger-menu")
+      const ipad = window.matchMedia("screen and (max-width: 767px)")
+      ipad.addListener(validation);
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener("click", hideShow);
+        } else {
+          burgerButton.removeEventListener("click", hideShow);
+        }
+      }
+      function hideShow() {
+        if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+        } else {
+          menu.classList.add("is-active");
+        }
+      }
+      validation(ipad);
+    </script>
   </body>
 </html>
-<!-- Esto es el HTML -->
+<!-- Estoy actualizandolo actualmente -->
